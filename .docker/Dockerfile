@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
         nginx \
         tidy \
         libtidy-dev \
+        libcurl4-openssl-dev \
     && apt-get upgrade -y \
     && docker-php-ext-install gmp \
     && docker-php-ext-install intl \
