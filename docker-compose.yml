@@ -1,0 +1,38 @@
+version: '3.7'
+
+services:
+    php:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        container_name: web-desa
+        restart: unless-stopped
+        hostname: web-desa-sengguruh
+        tty: true
+        working_dir: /var/www
+        depends_on:
+            - db
+        networks:
+            - ingress_network
+
+    db:
+        image: 'mariadb:10.7.1'
+        container_name: web-desa-db
+        restart: always
+        ports:
+            - "127.0.0.1:3306:3306"
+        environment:
+            MYSQL_DATABASE: opensid
+            MYSQL_RANDOM_ROOT_PASSWORD: 1
+            MYSQL_PASSWORD: rahasia
+            MYSQL_USER: opensid
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+        volumes:
+            - ./.docker/dbdata:/var/lib/mysql
+        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+        networks:
+            - ingress_network
+
+networks:
+  ingress_network:
+    external: true
