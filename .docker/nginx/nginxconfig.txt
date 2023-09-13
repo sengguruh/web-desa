@@ -1,0 +1,1 @@
+https://www.digitalocean.com/community/tools/nginx?domains.0.server.domain=sengguruh.com&domains.0.server.wwwSubdomain=true&domains.0.https.hstsPreload=true&domains.0.https.certType=custom&domains.0.php.phpServer=127.0.0.1%3A9000&global.https.portReuse=true&global.https.sslProfile=modern&global.https.ocspGoogle=false
