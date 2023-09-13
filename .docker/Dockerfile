@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y \
         vim \
         nginx \
         tidy \
+        libtidy-dev \
     && apt-get upgrade -y \
     && docker-php-ext-install gmp \
     && docker-php-ext-install intl \
