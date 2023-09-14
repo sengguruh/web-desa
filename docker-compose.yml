@@ -16,22 +16,21 @@ services:
             - ingress_network
         volumes:
             - .:/var/www/html:rw,Z
+            - /var/www/html/.docker:ro
 
     db:
-        image: 'mariadb:10.7.1'
+        image: 'mariadb:10.4'
         container_name: web-desa-db
         restart: always
         ports:
             - "127.0.0.1:3306:3306"
         environment:
-            MYSQL_DATABASE: opensid
             MYSQL_RANDOM_ROOT_PASSWORD: 1
-            MYSQL_PASSWORD: rahasia
+            MYSQL_DATABASE: opensid
             MYSQL_USER: opensid
-            MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+            MYSQL_PASSWORD: rahasia
         volumes:
-            - ./.docker/dbdata:/var/lib/mysql
-        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+            - ./.docker/dbdata:/var/lib/mysql:rw,Z
         networks:
             - ingress_network
 
