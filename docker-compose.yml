@@ -16,7 +16,7 @@ services:
             - ingress_network
         volumes:
             - .:/var/www/html:rw,Z
-            - /var/www/html/.docker:ro
+            - /var/www/html/.docker
 
     db:
         image: 'mariadb:10.4'
