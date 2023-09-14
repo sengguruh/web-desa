@@ -14,6 +14,8 @@ services:
             - db
         networks:
             - ingress_network
+        volumes:
+            - .:/var/www/html:rw,Z
 
     db:
         image: 'mariadb:10.7.1'
