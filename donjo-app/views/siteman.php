@@ -88,7 +88,7 @@
 								<?php endif ?>
 							</form>
 							<hr />
-							<div class="login-footer-bottom"><a href="https://github.com/OpenSID/OpenSID" target="_blank">Sengguruh</a> <?= AmbilVersi() ?></div>
+							<div class="login-footer-bottom"><a href='index.php/' target="_blank">Sengguruh</a> <?= AmbilVersi() ?></div>
 						</div>
 					</div>
 				</div>

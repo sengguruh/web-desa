@@ -10,11 +10,8 @@
                 </div>
                 <div id="collapse1" class="panel-collapse collapse in">
                     <div class="box-body">
-                        <p align="justify"><?= config_item('nama_aplikasi') ?> adalah aplikasi Sistem Informasi Desa
-                            (SID) yang dikembangkan sejak Mei 2016. <?= config_item('nama_aplikasi') ?> dirancang dan
-                            dikelola supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
-                            Informasi lebih lanjut dapat dilihat di <a
-                                href=https://github.com/OpenSID/opensid>https://github.com/OpenSID/OpenSID</a>.</p>
+                        <p align="justify"><?= config_item('nama_aplikasi') ?> adalah aplikasi Sistem Informasi Desa Sengguruh
+                            (SID) yang dikembangkan sejak 2023. <?= config_item('nama_aplikasi') ?>.</p>
                     </div>
                 </div>
             </div>
@@ -133,9 +130,6 @@
                             <li align="justify">Bentuk tim kerja bersama pemerintah desa</li>
                             <li align="justify">Diskusikan basis data apa saja yang diperlukan untuk warga</li>
                             <li align="justify">Himpun data kependudukan warga dari Kartu Keluarga (KK)</li>
-                            <li align="justify">Dapatkan aplikasi SID di <a
-                                    href=https://github.com/OpenSID/OpenSID/releases>https://github.com/OpenSID/OpenSID/releases</a>
-                            </li>
                             <li align="justify">Pasang aplikasi SID di komputer desa</li>
                             <li align="justify">Masukkan data penduduk ke SID</li>
                             <li align="justify">Basis data kependudukan sudah bisa dimanfaatkan</li>

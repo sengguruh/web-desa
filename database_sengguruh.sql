@@ -2087,7 +2087,7 @@ CREATE TABLE `dtks` (
   `kd_bayar_biaya_pengobatan` varchar(2) DEFAULT NULL,
   `kd_bahasa_wawancara` varchar(2) DEFAULT NULL,
   `tulis_bahasa_daerah` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -2166,7 +2166,7 @@ CREATE TABLE `dtks_anggota` (
   `kd_kepemilikan_ijin_usaha` varchar(2) DEFAULT NULL,
   `kd_omset_usaha_perbulan` varchar(2) DEFAULT NULL,
   `kd_guna_internet_usaha` varchar(2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -2182,7 +2182,7 @@ CREATE TABLE `dtks_lampiran` (
   `foto` text NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -2200,7 +2200,7 @@ CREATE TABLE `dtks_pengaturan_program` (
   `target_field` text NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -2212,7 +2212,7 @@ CREATE TABLE `dtks_ref_lampiran` (
   `id` int NOT NULL,
   `id_dtks` int NOT NULL,
   `id_lampiran` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 

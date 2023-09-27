@@ -404,9 +404,8 @@
         <footer class="main-footer">
             <div class="container">
                 <div class="pull-right hidden-xs">
-                    <b>Versi <?= config_item('nama_aplikasi') ?></b> v{{ AmbilVersi() }}
-                </div>
-                <strong>Hak cipta &copy; 2016-{{ date('Y') }} <a href="https://opendesa.id">OpenDesa</a>.</strong>
+                    
+                <strong>Sengguruh SID .</strong>
                 Seluruh hak cipta dilindungi.
             </div>
         </footer>
