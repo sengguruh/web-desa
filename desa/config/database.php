@@ -9,7 +9,7 @@
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'opensid';
-$db['default']['password'] = 'rahasia';
+$db['default']['password'] = '';
 $db['default']['port']     = 3306;
 $db['default']['database'] = 'opensid';
 
